@@ -14,6 +14,31 @@
       body {
         background-color: azure;
       }
+      @keyframes changeOpacity {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes disappearchangeOpacity {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+      .alertttstart {
+        animation: changeOpacity 3s linear forwards;
+      }
+      .alertttgo {
+        animation: disappearchangeOpacity 3s linear forwards;
+      }
     </style>
   </head>
   <body class="min-vh-100 d-flex flex-column">
@@ -74,7 +99,15 @@
           </div>
         </div>
       </div>
+
       <form class="text-center my-5" id="formviewcard">
+        <div
+          class="alert alert-success my-alert position-absolute bottom-0 end-0 opacity-0"
+          role="alert"
+          id="success-alert"
+        >
+          Dati inviati!
+        </div>
         <h4>Vuoi un preventivo con noi?</h4>
         <div class="d-flex justify-content-center flex-column">
           <div class="mb-3">
@@ -116,7 +149,9 @@
             />
           </div>
           <div class="mb-3">
-            <button class="btn btn-secondary">Invia i tuoi dati!</button>
+            <button class="btn btn-secondary" id="coloralert">
+              Invia i tuoi dati!
+            </button>
           </div>
         </div>
       </form>
