@@ -77,3 +77,13 @@ const deleteCar = function () {
 };
 
 getCarDetails();
+
+window.addEventListener("scroll", function () {
+  let header = document.getElementById("change-color");
+
+  if (window.scrollY > 50) {
+    header.classList.add("newcolor");
+  } else {
+    header.classList.remove("newcolor");
+  }
+});

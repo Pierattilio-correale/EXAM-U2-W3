@@ -14,10 +14,13 @@
       body {
         background-image: url("https://wallpapers.com/images/hd/hd-car-background-05akadzow8fujuto.jpg");
       }
+      .newcolor {
+        background-color: #13526fc7;
+      }
     </style>
   </head>
   <body class="min-vh-100 d-flex flex-column">
-    <header>
+    <header class="sticky-top" id="change-color">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
@@ -52,13 +55,7 @@
         </div>
       </nav>
     </header>
-    <div
-      class="alert alert-success my-alert position-absolute top-0 end-0 opacity-0"
-      role="alert"
-      id="success-alert"
-    >
-      Contenuto salvato!
-    </div>
+
     <main class="flex-grow-1">
       <h1 class="text-center text-white">Car Market</h1>
       <h2 class="text-center text-white">
