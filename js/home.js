@@ -44,8 +44,8 @@ const getEvents = function () {
       <p class="card-text">${car.description}</p>
       <p class="card-text flex-grow-1">${car.price}$</p>
       <div class="d-xl-flex">
-      <a href="./viewcard.html?id=${car._id}" class="btn btn-outline-primary mx-2 my-2 my-xl-0">Vai Ai Dettagli</a>
-      <a href="./details.html?id=${car._id}" class="btn btn-outline-success mx-2">Modifica</a>
+      <a href="./viewcard.html?id=${car._id}" class="btn btn-outline-primary mx-2 my-3 my-xl-0 p-1 w-100">Vai Ai Dettagli</a>
+      <a href="./details.html?id=${car._id}" class="btn btn-outline-success mx-2 p-1 w-100">Modifica</a>
        </div>
     </div>
   </div>
