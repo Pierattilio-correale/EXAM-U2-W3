@@ -93,7 +93,7 @@ form.addEventListener("submit", function (e) {
       console.log("errore nel salvataggio!", err);
     });
 });
-// FONTE DEL METODO CONFIRM JS https://www.andreaminini.com/javascript/confirm-in-javascript#:~:text=L'istruzione%20Confirm%20del%20linguaggio,sul%20pulsante%20OK%20o%20Annulla.
+// https://www.andreaminini.com/javascript/confirm-in-javascript#:~:text=L'istruzione%20Confirm%20del%20linguaggio,sul%20pulsante%20OK%20o%20Annulla.
 const buttonFormReset = document.getElementById("resett");
 buttonFormReset.addEventListener("click", function (e) {
   e.preventDefault();

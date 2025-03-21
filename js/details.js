@@ -51,6 +51,11 @@ const editCar = function () {
 };
 
 const deleteCar = function () {
+  const conferma = confirm("Sei sicuro di voler eliminare questa macchina?");
+  if (!conferma) {
+    return;
+  }
+
   fetch(eventsURL + "/" + carId, {
     method: "DELETE",
     headers: {
@@ -61,10 +66,9 @@ const deleteCar = function () {
     .then((response) => {
       if (response.ok) {
         alert("Macchina Eliminata");
-
         location.assign("./home.html");
       } else {
-        throw new Error("eliminazione NON andata a buon fine!");
+        throw new Error("Eliminazione NON andata a buon fine!");
       }
     })
     .catch((err) => {
